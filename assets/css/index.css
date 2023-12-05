@@ -1,0 +1,259 @@
+.presentation_wrapper {
+  background-image: url("../img/embarcacao_image.png");
+  background-position: center top;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: calc(100vh - 80px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentation_text {
+  width: 100vw;
+  height: calc(86vh - 80px);
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 50px;
+  padding: 41px;
+}
+
+.content_home {
+  padding: 0 5%;
+}
+
+.description {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.description_title {
+  font-size: 60px;
+  font-weight: bolder;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.description_title button {
+  padding: 15px 80px;
+  background-color: var(--bg-blue);
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.description_text {
+  width: 40%;
+  font-size: 25px;
+  text-align: left;
+}
+
+.content_home h2 {
+  font-weight: bolder;
+  font-size: 50px;
+  margin-bottom: -40px;
+}
+
+.content_boxes_one {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.content_boxes_one_image {
+  z-index: 10;
+}
+.content_boxes_one_image img {
+  margin-right: -20px;
+  height: 300px;
+}
+
+.content_boxes_one_text {
+  background: var(--bg-blue);
+  color: #fff;
+  padding: 40px;
+  height: 300px;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-weight: 200;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+
+.content_boxes_two {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.content_boxes_two_image {
+  z-index: 10;
+}
+.content_boxes_two_image img {
+  margin-left: -40px;
+  height: 300px;
+}
+
+.content_boxes_two_text {
+  background: var(--bg-blue);
+  color: #fff;
+  padding: 40px;
+  height: 300px;
+  border-radius: 10px;
+  font-weight: 200;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.extra_info {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.extra_info_image {
+  height: 300px;
+  border-bottom: 20px solid var(--bg-blue);
+}
+
+.extra_info_image img {
+  height: 300px;
+}
+
+.extra_info_text {
+  height: 300px;
+  font-weight: 200;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  border-bottom: 20px solid var(--bg-blue);
+  border-right: 20px solid var(--bg-blue);
+}
+
+
+@media (max-width: 1082px) {
+
+  main{
+    overflow-x: hidden;
+  }
+
+  .presentation_wrapper {
+    height: calc(70vh - 80px);
+    overflow: hidden;
+
+  }
+  
+  .presentation_text {
+    display: none;
+  }
+  
+  .content_home {
+    padding: 0 2%;
+  }
+  
+  .description {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .description_title {
+    font-size: 30px;
+    font-weight: bolder;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .description_title button {
+    padding: 15px 20px;
+    background-color: var(--bg-blue);
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .description_text {
+    width: 40%;
+    font-size: 16px;
+  }
+  
+  .content_home h2 {
+    font-size: 30px;
+    margin: 30px 0 10px 0;
+  }
+  
+  .content_boxes_one_image {
+    display: none;
+  }
+  
+  .content_boxes_one_text {
+    height: 200px;
+    font-size: 16px;
+  }
+  
+  .content_boxes_two_image {
+    display: none;
+  }
+  
+  .content_boxes_two_text {
+    height: 200px;
+    font-size: 16px;
+  }
+  
+  .extra_info {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .extra_info_image {
+    display: none;
+  }
+  
+  .extra_info_image img {
+    height: 300px;
+  }
+  
+  .extra_info_text {
+    height: 250px;
+    font-weight: 200;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    border-bottom: 20px solid var(--bg-blue);
+    border-right: 20px solid var(--bg-blue);
+  }
+  
+}

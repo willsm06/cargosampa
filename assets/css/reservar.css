@@ -1,0 +1,64 @@
+:root {
+  --titulo-cor: #0a24bf;
+  --formulario-fundo: #d9d9d9;
+  --texto-branco: #ffffff;
+}
+
+body {
+    background: var(--bg-white);
+}
+
+h1 {
+    text-align: center;
+    background-color: var(--titulo-cor);
+    color: var(--texto-branco);
+    padding: 15px;
+    margin: 0;
+}
+
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: var(--formulario-fundo);
+}
+
+h2 {
+  background-color: var(--titulo-cor);
+  color: var(--texto-branco);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  margin-top: 5px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
