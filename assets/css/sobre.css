@@ -1,0 +1,309 @@
+body {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+  background-color: #0a24bf; /* Blue background */
+}
+.presentation_wrapper {
+  position: absolute;
+  right: 100px;
+  top: 40%;
+  transform: translateY(-50%);
+  width: auto;
+  height: 50vh;
+  display: flex;
+}
+
+.presentation_wrapper img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 80vh;
+}
+
+.white-box {
+  position: absolute;
+  left: 10%;
+  bottom: 60%;
+  padding: 20px 50px;
+  background: var(--bg-white);
+  color: #000000;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.content_home {
+  padding: 0 5%;
+}
+
+.description {
+  width: 100%;
+  height: calc(90vh - 80px);
+}
+
+.description_title {
+  font-size: 60px;
+  font-weight: bolder;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content_home h2 {
+  font-weight: bolder;
+  font-size: 50px;
+  padding: 100px;
+  text-align: left; 
+  color: #ffffff; /* White text color */
+}
+
+.content_boxes_one_text {
+  color: #ffffffdb;
+  padding: 40px;
+  height: 200px;
+  border-radius: 10px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+.content_boxes_two {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+  position: relative; /* Adicione position relative para posicionar a sombra corretamente */
+}
+
+.content_boxes_two_image {
+  z-index: 10;
+  order: 2; 
+}
+
+.content_boxes_two_image img {
+  height: 300px;
+}
+
+.content_boxes_two_text {
+  background: var(--bg-white);
+  color: rgb(6, 6, 6)c8c;
+  padding: 40px;
+  height: 300px;
+  border-radius: 10px;
+  font-weight: 200;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  order: 1;
+}
+
+.shadow-box {
+  position: absolute;
+  width: calc(80% - 100px);
+  height: 86%;
+  width: 1261px;
+  background: transparent;
+  border-radius: 10px;
+  box-shadow: 11px 10px 11px #667dfe;
+}
+
+.extra_info {
+  color: #000000db;
+  padding: 100px 0 0 0;
+  height: 200px;
+  border-radius: 10px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+.extra_info_image {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.extra_info_image img {
+  height: 350px;
+  padding: 10px;
+}
+
+.extra_info_text {
+  background: var(--bg-white);
+  color: rgb(6, 6, 6)c8c;
+  padding: 10px;
+  height: 300px;
+  border-radius: 10px;
+  font-weight: 200;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  order: 1; 
+}
+
+.content_boxes_one_text {
+  color: #ffffffdb;
+  padding: 40px;
+  height: 200px;
+  border-radius: 10px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+.caixa_tres {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.caixa_tres_image {
+  z-index: 10;
+  order: 2;
+}
+
+.caixa_tres_image img {
+  height: 300px;
+}
+
+.caixa_tres_text {
+  background: var(--bg-blue);
+  color: rgb(6, 6, 6)c8c;
+  padding: 40px;
+  height: 300px;
+  border-radius: 10px;
+  font-weight: 200;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  order: 1;
+}
+
+.shadow-box-tres {
+  position: absolute;
+  width: calc(80% - 100px); /* Ajuste conforme necessário para cobrir a largura do texto */
+  height: 380px;
+  width: 1055px;
+  background: transparent;
+  border-radius: 10px;
+  box-shadow: 11px 10px 11px #667dfe; /* Adicione uma box-shadow para criar um sombreado */
+}
+
+.rota_text {
+  color: #ffffffdb;
+  padding: 40px;
+  height: 100px;
+  border-radius: 10px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  position: relative; /* Adicione a propriedade position relative para usar a propriedade bottom */
+  bottom: 190px;
+}
+
+.rota_image {
+  text-align: center;
+  margin-top: -130px; /* Centralize o conteúdo dentro da div */
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rota_image img {
+  height: 100%;/* Certifique-se de que a imagem não ultrapasse a altura da div pai */
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+  }
+
+  .presentation_wrapper {
+    left: 0;
+    top: 30%;
+    width: 100vw;
+  }
+
+  .presentation_wrapper img {
+    max-width: 100%; 
+    top: 80px;
+    left: 0;
+  }
+
+  .content_home {
+    padding: 0 3%;
+  }
+
+  .white-box {
+    left: 250px;
+    bottom: 1500px;
+    padding: 20px;
+    font-size: 24px;
+    align-items: center;
+  }
+
+  .content_boxes_one_text,
+  .content_boxes_two_text,
+  .extra_info_text,
+  .caixa_tres_text,
+  .rota_text {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .extra_info {
+    padding: 0px;
+    padding-top: 20px;
+  }
+
+  .extra_info_text {
+    font-size: 16px;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .content_boxes_two_image img,
+  .extra_info_image img,
+  .caixa_tres_image img {
+    display: none;
+  }
+
+  .shadow-box,
+  .shadow-box-tres {
+    width: 100%;
+  }
+
+  .rota_image {
+    text-align: center;
+    margin-top: -130px; /* Centralize o conteúdo dentro da div */
+    width: 100vw;
+    height: 50vh;
+  }
+  
+  .rota_image img {
+    height: 50%;/* Certifique-se de que a imagem não ultrapasse a altura da div pai */
+  }
+}
+
